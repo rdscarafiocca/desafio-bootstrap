@@ -13,49 +13,50 @@
     <title>Document</title>
 </head>
 <body class="container" style="background-color: bisque; font-family: Roboto;">
-    <header>
-        <nav class="bg-dark" style="height: 50px; margin-bottom: 10px;">
-            <img src="imagenes/iconos/github.png" class="float-end" style="max-height: 50%;">
-            <img src="imagenes/iconos/linkedin.png" class="float-end" style="max-height: 70%;">
+    <header class="container-fluid row">
+        <nav class="bg-dark" style="height: 50px; margin-bottom: 10px; align-items: center;">
+            <a href="https://www.github.com" target="_blank"><img src="imagenes/iconos/github.png" class="float-end me-4 mt-2" style="max-height: 50%;" alt="github"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="imagenes/iconos/linkedin.png" class="float-end me-4 mt-1" style="max-height: 70%;" alt="linkedin"></a>
         </nav>
     </header>
 
-    <main class="container row">
+    <main class="container-fluid row">
         <section class="mb-5 col-sm-3 border rounded" style="background-color: rgb(3, 3, 35); box-shadow: 2px 2px 20px rgb(68, 68, 244);">
             <article id="foto_nombre">
                 <div id="foto">
                     <img class="img-fluid mx-auto d-block rounded mt-3" src="/imagenes/persona.jpg" alt="foto_candidato">
                 </div>
                 <div id="nombre" class="bg-light text-center mt-3 border rounded">
-                    <h3>Juan Pérez</h3>
+                    <h3 class="mb-0">Juan Pérez</h3>
                 </div>
             </article>
 
             <article id="descripcion" class="text-light mb-4">
-                <h3>Acerca de mí</h3>
+                <h3 class="text-center mt-3">Acerca de mí</h3>
                 <p>Soy una persona proactiva y con voluntad de incorporar continuamente nuevos conocimientos que me permitan avanzar en el campo de la programación Web y bases de datos, siempre enfocado a obtener los mejores resultados posibles en cada proyecto en los que estoy involucrado.</p>
             </article>
 
-            <article id="contacto" class="text-light"> <!-- AGREGAR VINCULOS PARA LLAMAR O MANDAR MAIL AL TOCAR SOBRE LA DIRECCION/NUMERO -->
-                <div id="telefono" class="row">
-                    <img class="img-fluid col-sm-6" style="max-width: 25%;" src="/imagenes/iconos/tel.png" alt="telefono">
-                    <h5 class="col-sm-6 align-self-center">47601234</h5>
+            <article id="contacto" class="text-light">
+                <div id="telefono" class="row mb-3">
+                    <img class="img-fluid col-sm-6 iconos" src="/imagenes/iconos/tel.png" alt="telefono">
+                    <a href="tel:1147601234" class="col-sm-6"><h3>47601234</h3></a>
                 </div>
-                <div id="movil" class="row">
-                    <img class="img-fluid col-sm-6" style="max-width: 25%;" src="/imagenes/iconos/cel.png" alt="celular">
-                    <h5 class="col-sm-6 align-self-center">15-1122-3344</h5>
+                <div id="movil" class="row mb-3">
+                    <img class="img-fluid col-sm-6 iconos" src="/imagenes/iconos/cel.png" alt="celular">
+                    <a href="tel:1122334455" class="col-sm-6"><h3>11-2233-4455</h3></a>
                 </div>
-                <div id="email" class="row">
-                    <img class="img-fluid col-sm-6" style="max-width: 25%;" src="/imagenes/iconos/mail.png" alt="email">
-                    <h5 class="col-sm-6 align-self-center">juan_perez@ejemplo.com</h5>
+                <div id="email" class="row mb-3">
+                    <img class="img-fluid col-sm-6 iconos" src="/imagenes/iconos/mail.png" alt="email">
+                    <a href = "mailto: juan_perez@ejemplo.com" class="col-sm-6"><h3>juan_perez@ ejemplo.com</h3></a>
                 </div>
-                <div id="direccion" class="row">
-                    <img class="img-fluid col-sm-6" style="max-width: 25%;" src="/imagenes/iconos/casa.png" alt="direccion">
-                    <h5 class="col-sm-6 align-self-center">Calle 1234, Buenos Aires</h5>
+                <div id="direccion" class="row mb-3">
+                    <img class="img-fluid col-sm-6 iconos" src="/imagenes/iconos/casa.png" alt="direccion">
+                    <a href="https://www.google.com/maps/place/Villa+Martelli,+Provincia+de+Buenos+Aires/" class="col-sm-6" target="_blank">
+                        <h3>Villa Martelli, Buenos Aires</h3></a>
                 </div>
             </article>
         </section>
-        <div class="col-sm-9">
+        <section class="col-sm-9">
             <div class="row">
                 <section class="mb-4 col-sm-12 border rounded">
                     <article id="formacion" class="col-sm-12 bg-primary" style="box-shadow: 3px 3px 10px rgb(100, 113, 198);">
@@ -95,7 +96,7 @@
                         </div>
                         <div id="descripcion" class="row ms-3">
                             <div id="empresa" class="text-warning">
-                                <h4>Accenture</h4>
+                                <h4 class="fw-bold">Accenture</h4>
                             </div>
                             <div id="periodo" class="col-sm-3 text-info">
                                 <h4>2014-2015</h4>
@@ -111,7 +112,7 @@
                         </div>
                         <div id="descripcion" class="row ms-3">
                             <div id="empresa" class="text-warning">
-                                <h4>Globant</h4>
+                                <h4 class="fw-bold">Globant</h4>
                             </div>
                             <div id="periodo" class="col-sm-3 text-info">
                                 <h4>2013-2014</h4>
