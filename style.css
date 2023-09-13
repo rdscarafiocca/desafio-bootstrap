@@ -1,8 +1,30 @@
+body{
+    background-color: bisque;
+}
+nav{
+    height: 50px; margin-bottom: 10px; align-items: center;
+}
+hr{
+    width: 95%; margin-left: 10px;
+}
+
 .iconos{
-    max-width: 50px;
+    max-width: 70px;
     max-height: 50px;
 }
 
-.texto-resp {
-    font-size: calc(100% + 1vw + 1vh);
-  }
+#icono_git{
+    max-height: 50%;
+}
+#icono_lnk{
+    max-height: 70%;
+}
+
+#menu_izquierdo{
+    background-color: rgb(3, 3, 35); 
+    box-shadow: 2px 2px 20px rgb(68, 68, 244);
+}
+
+#formacion, #laboral, #cursos, #aficiones{
+    box-shadow: 3px 3px 10px rgb(100, 113, 198);
+}
